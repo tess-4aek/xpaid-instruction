@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Удаление аккаунта — MyApp</title>
+  <style>
+    :root{--bg:#f7fafc;--card:#ffffff;--muted:#6b7280;--accent:#1f2937}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:var(--accent); margin:0; padding:24px}
+    .wrap{max-width:900px;margin:32px auto;padding:28px;background:var(--card);border-radius:12px;box-shadow:0 6px 24px rgba(16,24,40,0.06)}
+    h1{margin:0 0 8px;font-size:22px}
+    p.lead{margin:0 0 18px;color:var(--muted)}
+    h2{font-size:16px;margin-top:20px}
+    ol,ul{margin:8px 0 18px 20px}
+    code{background:#f3f4f6;padding:2px 6px;border-radius:6px;font-size:13px}
+    .meta{font-size:13px;color:var(--muted);margin-top:8px}
+    .note{background:#fffbeb;border-left:4px solid #f59e0b;padding:10px;border-radius:6px;margin:12px 0}
+    a.button{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;border:1px solid #e5e7eb;margin-top:8px}
+    footer{margin-top:20px;font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Удаление аккаунта в приложении "MyApp"</h1>
+    <p class="lead">На этой странице указана пошаговая инструкция по запросу удаления аккаунта и связанных с ним данных — в соответствии с требованиями Google Play.</p>
+
+    <h2>1. Как запросить удаление аккаунта</h2>
+    <ol>
+      <li>Откройте приложение <strong>MyApp</strong> и перейдите в раздел: <em>Профиль → Настройки → Удаление аккаунта</em>. Следуйте указаниям в приложении.</li>
+      <li>Если вы не можете войти в аккаунт, отправьте письмо с запрсом на удаление на <code>support@myapp.com</code> или заполните форму по ссылке: <a href="#" id="deleteLink">https://example.com/delete-request</a>.</li>
+      <li>В запросе укажите: адрес электронной почты, имя пользователя (если есть), причину удаления и подтверждение того, что вы хотите удалить аккаунт.</li>
+    </ol>
+
+    <h2>2. Какие данные будут удалены</h2>
+    <ul>
+      <li>Личные данные: имя, email, аватар, профильные поля.</li>
+      <li>Контент пользователя: записи, комментарии, отправленные сообщения (если это предусмотрено продуктом).</li>
+      <li>Настройки и предпочтения аккаунта.</li>
+    </ul>
+
+    <h2>3. Какие данные могут сохраняться</h2>
+    <ul>
+      <li>Финансовые и бухгалтерские записи — в объёме, требуемом законодательством и внутренней политикой (при наличии платежей).</li>
+      <li>Анонимизированные технические логи и статистика для обеспечения безопасности и расследования инцидентов (хранение до 90 дней).</li>
+    </ul>
+
+    <h2>4. Сроки удаления</h2>
+    <p class="meta">Мы предпримем основные действия по удалению данных в течение <strong>7 рабочих дней</strong> после получения запроса. Полное удаление всех резервных копий и связанных записей может занимать до <strong>30 дней</strong>.</p>
+
+    <div class="note">
+      <strong>Важно:</strong> если в вашей юрисдикции действуют иные обязательные сроки хранения (например, для финансовых данных), мы оставляем за собой право хранить соответствующие записи в соответствии с законом.
+    </div>
+
+    <h2>5. Как мы подтверждаем удаление</h2>
+    <p>После успешного удаления вы получите уведомление на указанный в запросе email с описанием того, какие данные были удалены и какие — сохранены с объяснением причин.</p>
+
+    <h2>6. Контакты</h2>
+    <p>Если остались вопросы — напишите: <code>support@myapp.com</code> или используйте форму: <a href="#" id="contactLink">https://example.com/contact</a>.</p>
+
+    <footer>Страница подготовлена разработчиком приложения <strong>MyApp</strong>. При публикации в Google Play замените названия, email и ссылки на реальные значения.</footer>
+  </div>
+  <script>
+    // Замените значения ниже скриптом сервера или вручную перед публикацией
+    const APP_NAME = 'MyApp';
+    const SUPPORT_EMAIL = 'support@myapp.com';
+    const DELETE_URL = 'https://example.com/delete-request';
+    const CONTACT_URL = 'https://example.com/contact';
+
+    document.title = `Удаление аккаунта — ${APP_NAME}`;
+    document.querySelector('h1').textContent = `Удаление аккаунта в приложении "${APP_NAME}"`;
+    document.querySelectorAll('code').forEach(c=>{ if(c.textContent.includes('support@')) c.textContent = SUPPORT_EMAIL });
+    document.getElementById('deleteLink').href = DELETE_URL; document.getElementById('deleteLink').textContent = DELETE_URL;
+    document.getElementById('contactLink').href = CONTACT_URL; document.getElementById('contactLink').textContent = CONTACT_URL;
+    document.querySelector('footer').innerHTML = `Страница подготовлена разработчиком приложения <strong>${APP_NAME}</strong>. При публикации в Google Play замените названия, email и ссылки на реальные значения.`;
+  </script>
+</body>
+</html>
