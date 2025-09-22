@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Удаление аккаунта — MyApp</title>
+  <title>Account Deletion — Xpaid</title>
   <style>
     :root{--bg:#f7fafc;--card:#ffffff;--muted:#6b7280;--accent:#1f2937}
     body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:var(--accent); margin:0; padding:24px}
@@ -21,57 +21,55 @@
 </head>
 <body>
   <div class="wrap">
-    <h1>Удаление аккаунта в приложении "MyApp"</h1>
-    <p class="lead">На этой странице указана пошаговая инструкция по запросу удаления аккаунта и связанных с ним данных — в соответствии с требованиями Google Play.</p>
+    <h1>Account Deletion in the "Xpaid" App</h1>
+    <p class="lead">This page provides a step-by-step guide on how to request account deletion and related data — in accordance with Google Play requirements.</p>
 
-    <h2>1. Как запросить удаление аккаунта</h2>
+    <h2>1. How to request account deletion</h2>
     <ol>
-      <li>Откройте приложение <strong>MyApp</strong> и перейдите в раздел: <em>Профиль → Настройки → Удаление аккаунта</em>. Следуйте указаниям в приложении.</li>
-      <li>Если вы не можете войти в аккаунт, отправьте письмо с запрсом на удаление на <code>support@myapp.com</code> или заполните форму по ссылке: <a href="#" id="deleteLink">https://example.com/delete-request</a>.</li>
-      <li>В запросе укажите: адрес электронной почты, имя пользователя (если есть), причину удаления и подтверждение того, что вы хотите удалить аккаунт.</li>
+      <li>Open the <strong>Xpaid</strong> app and go to <em>Profile</em>. At the bottom you will find a delete button. Follow the instructions.</li>
+      <li>If you cannot log into your account, send a deletion request to <code>ceo@xpaid.org</code> or fill out the form at: <a href="#" id="deleteLink">https://example.com/delete-request</a>.</li>
+      <li>In your request, please include: your email address, username (if any), reason for deletion, and confirmation that you wish to delete your account.</li>
     </ol>
 
-    <h2>2. Какие данные будут удалены</h2>
+    <h2>2. What data will be deleted</h2>
     <ul>
-      <li>Личные данные: имя, email, аватар, профильные поля.</li>
-      <li>Контент пользователя: записи, комментарии, отправленные сообщения (если это предусмотрено продуктом).</li>
-      <li>Настройки и предпочтения аккаунта.</li>
+      <li>Personal data: name, email, profile fields.</li>
+      <li>Account settings and preferences.</li>
     </ul>
 
-    <h2>3. Какие данные могут сохраняться</h2>
+    <h2>3. What data may be retained</h2>
     <ul>
-      <li>Финансовые и бухгалтерские записи — в объёме, требуемом законодательством и внутренней политикой (при наличии платежей).</li>
-      <li>Анонимизированные технические логи и статистика для обеспечения безопасности и расследования инцидентов (хранение до 90 дней).</li>
+      <li>Financial and accounting records — as required by law and internal policies (if payments exist).</li>
+      <li>Anonymized technical logs and statistics for security and incident investigation (stored for up to 90 days).</li>
     </ul>
 
-    <h2>4. Сроки удаления</h2>
-    <p class="meta">Мы предпримем основные действия по удалению данных в течение <strong>7 рабочих дней</strong> после получения запроса. Полное удаление всех резервных копий и связанных записей может занимать до <strong>30 дней</strong>.</p>
+    <h2>4. Deletion timeline</h2>
+    <p class="meta">We will take primary action to delete your data within <strong>7 business days</strong> after receiving your request. Complete removal of all backups and related records may take up to <strong>30 days</strong>.</p>
 
     <div class="note">
-      <strong>Важно:</strong> если в вашей юрисдикции действуют иные обязательные сроки хранения (например, для финансовых данных), мы оставляем за собой право хранить соответствующие записи в соответствии с законом.
+      <strong>Important:</strong> if your jurisdiction requires longer retention periods (e.g., for financial data), we reserve the right to retain such records as required by law.
     </div>
 
-    <h2>5. Как мы подтверждаем удаление</h2>
-    <p>После успешного удаления вы получите уведомление на указанный в запросе email с описанием того, какие данные были удалены и какие — сохранены с объяснением причин.</p>
+    <h2>5. How we confirm deletion</h2>
+    <p>After successful deletion, you will receive a notification at the email provided in your request, describing which data was deleted and which was retained, along with the reasons.</p>
 
-    <h2>6. Контакты</h2>
-    <p>Если остались вопросы — напишите: <code>support@myapp.com</code> или используйте форму: <a href="#" id="contactLink">https://example.com/contact</a>.</p>
+    <h2>6. Contacts</h2>
+    <p>If you have any questions — contact us at: <code>ceo@xpaid.org</code></p>
 
-    <footer>Страница подготовлена разработчиком приложения <strong>MyApp</strong>. При публикации в Google Play замените названия, email и ссылки на реальные значения.</footer>
+    <footer>This page was prepared by the developer of the <strong>Xpaid</strong> application.</footer>
   </div>
   <script>
-    // Замените значения ниже скриптом сервера или вручную перед публикацией
-    const APP_NAME = 'MyApp';
-    const SUPPORT_EMAIL = 'support@myapp.com';
+    const APP_NAME = 'Xpaid';
+    const SUPPORT_EMAIL = 'ceo@xpaid.org';
     const DELETE_URL = 'https://example.com/delete-request';
     const CONTACT_URL = 'https://example.com/contact';
 
-    document.title = `Удаление аккаунта — ${APP_NAME}`;
-    document.querySelector('h1').textContent = `Удаление аккаунта в приложении "${APP_NAME}"`;
-    document.querySelectorAll('code').forEach(c=>{ if(c.textContent.includes('support@')) c.textContent = SUPPORT_EMAIL });
+    document.title = `Account Deletion — ${APP_NAME}`;
+    document.querySelector('h1').textContent = `Account Deletion in the "${APP_NAME}" App`;
+    document.querySelectorAll('code').forEach(c=>{ if(c.textContent.includes('@')) c.textContent = SUPPORT_EMAIL });
     document.getElementById('deleteLink').href = DELETE_URL; document.getElementById('deleteLink').textContent = DELETE_URL;
     document.getElementById('contactLink').href = CONTACT_URL; document.getElementById('contactLink').textContent = CONTACT_URL;
-    document.querySelector('footer').innerHTML = `Страница подготовлена разработчиком приложения <strong>${APP_NAME}</strong>. При публикации в Google Play замените названия, email и ссылки на реальные значения.`;
+    document.querySelector('footer').innerHTML = `This page was prepared by the developer of the <strong>${APP_NAME}</strong> application.`;
   </script>
 </body>
 </html>
